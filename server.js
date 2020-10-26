@@ -19,8 +19,8 @@ app.use('/contact', contact);
 app.use('/events', events);
 app.use('/sponsors', sponsors);
 
-app.listen(2000, function () {
-    console.log("Listening on port 2000");
+app.listen(process.env.PORT || 3000, function () {
+    console.log("Listening on port 3000");
 })
 
 module.exports = app;
