@@ -1,0 +1,23 @@
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+
+  /*TODO: Change to follow SWE Brand guidelines*/
+  background-color: #ebbf30;
+  color: #5dbcd2;
+  font-size: larger;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.header {
+  width: 100%;
+}
