@@ -4,6 +4,10 @@ var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var path = require('path');
 
+app.use(bodyParser.urlencoded({
+    extended: true
+  }))
+
 // Serve routes
 var index = require('./routes/index');
 var about = require('./routes/about');
@@ -18,6 +22,7 @@ app.use('/about', about);
 app.use('/contact', contact);
 app.use('/events', events);
 app.use('/sponsors', sponsors);
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(process.env.PORT || 3000, function () {
     console.log("Listening on port 3000");
