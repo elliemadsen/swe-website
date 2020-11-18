@@ -4,29 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
+    <title>Brown SWE</title>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 </head>
 
 <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="../img/swe-logo.png" alt="" id="navbar-logo">
+              </a>
+          </div>
+          <ul class="nav navbar-nav mx-auto">
+            <a class="btn btn-light navbar-btn shadow-sm" href='index.html'>Home</a>
+            <a class="btn btn-light navbar-btn shadow-sm" href='about.html'>About</a>
+            <a class="btn btn-light navbar-btn shadow-sm" href='contact.html'>Contact</a>
+            <a class="btn btn-light navbar-btn shadow-sm" href='events.html'>Events</a>
+            <a class="btn btn-light navbar-btn shadow-sm" href='sponsors.html'>Sponsors</a>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- img carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../img/group-photo-2-crop.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../img/group-photo-1.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../img/group-photo-3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="d-flex p-2 flex-column align-items-center banner">
+        <h1>Society of Women Engineers @ Brown</h1>
+    </div>
+
+    <!-- content flexbox -->
+    <div class="d-flex p-2 flex-column align-items-center">
+        <!-- about us + mission flexbox -->
+        <div class="d-flex p-2 flex-column align-items-center">
+            <h3>About Us</h3>
+            <div class="bubble">
+                <h5>Brown University SWE</h5>
+                <p>The Brown University section serves to build a community of female engineers at Brown and help prepare students for their future. The section holds school-wide professional development, networking, outreach, and social events.</p>
+                <br>
+                <h5>Society of Women Engineers</h5>
+                <p>The Society of Women Engineers (SWE) is a non-profit organization whose mission is to stimulate women to achieve full potential in careers as engineers and leaders, expand the image of the engineering profession as a positive force in improving the quality of life, and demonstrate the value of diversity.</p>
+            </div>
+            <h3>Mission</h3>
+            <div class="bubble">
+                <p>The Society of Women Engineer’s mission is to empower women to achieve full potential in careers as engineers and leaders, expand the image of the engineering and technology professions as a positive force in improving the quality of life, and demonstrate the value of diversity and inclusion.</p>
+            </div>
+        </div>
+
+        <!-- events carousel -->
 
 
-    <h1>Welcome to the Brown SWE homepage.</h1>
-    
-    <br>
-    <ul>
-        <li><a href='/about'>About</a></li>
-        <li><a href='/contact'>Contact</a></li>
-        <li><a href='/events'>Events</a></li>
-        <li><a href='/sponsors'>Sponsors</a></li>
-    </ul>
-    <h3>Follow us on Facebook</h3>
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com/BrownSWE/&amp;width=350"
-        scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media" width="350"
-        height="220"></iframe>
-    <h3>Follow us on Instagram</h3>
-    <iframe src="https://www.instagram.com/p/CFimLV5D0dy/embed" allowtransparency="true" frameborder="0" scrolling="no"
-        width="320" height="550"></iframe>
+        <!-- social media flexbox -->
+        <div class="p-2">
+            <div class="d-flex p-2 flex-row align-items-center">
+                <div class="bubble">
+                    <h5>Follow us on Facebook</h5>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com/BrownSWE/&amp;width=350"
+                    scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media" width="350"
+                    height="220"></iframe>
+                </div>
+                <div class="bubble">
+                    <h5>Follow us on Instagram</h5>
+                <iframe src="https://www.instagram.com/p/CFimLV5D0dy/embed" allowtransparency="true" frameborder="0" scrolling="no"
+                    width="320" height="550"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+        
 </body>
 
 </html>
