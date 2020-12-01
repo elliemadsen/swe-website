@@ -91,6 +91,30 @@
   justify-content: center;
 }
 
+.calendar {
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.events-title {
+  padding: 30px;
+  margin: auto;
+  font-family: Open Sans;
+  font-size: 24px;
+  color: #5e5e5e;
+}
+
+.events-para {
+  padding: 30px;
+  margin: auto;
+  font-family: Open Sans;
+  font-size: 18x;
+  color: #5e5e5e;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
 select,
