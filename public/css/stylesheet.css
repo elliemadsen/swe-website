@@ -75,6 +75,21 @@
   background-color: #595478;
   height: 50px;
 }
+.sponsor img {
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-para {
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
